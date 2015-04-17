@@ -1,11 +1,19 @@
 <head>
   <title>priphea</title>
+
+  <link href="/vendor/gumby.css" rel="stylesheet">
 </head>
 
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+  <div id="hero">
+    {{> player}}
+  </div>
+
+  <main>
+    {{> hello}}
+  </main>
 </body>
 
 <template name="hello">
