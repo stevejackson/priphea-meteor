@@ -1,3 +1,31 @@
 main {
-  background: red;
+}
+
+// contains the sidebar, browser, and songlist
+div#outer_container {
+}
+
+div#sidebar {
+  height: 100%;
+  background-color: white;
+}
+
+div#browser {
+  height: 100%;
+  max-height: 100%;
+}
+
+#cover_art_gallery {
+  height: 400px;
+  overflow-y: scroll;
+
+  .cover {
+    display: inline-block;
+  }
+}
+
+div#song_list {
+  height: 150px;
+  background-color: white;
+  overflow: scroll;
 }

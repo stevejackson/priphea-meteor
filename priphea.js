@@ -1,19 +1,21 @@
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
+  Template.browser.helpers({
+
+    albums: function() {
+      var i = 0;
+
+      var albumArtFilenames = [];
+
+      for(i = 875; i < 1311; i++) {
+        prefix = "/images/fakecovers/";
+        albumArtFilenames.push(prefix + i.toString() + ".jpg");
+      }
+
+      return albumArtFilenames;
     }
   });
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
 }
 
 if (Meteor.isServer) {

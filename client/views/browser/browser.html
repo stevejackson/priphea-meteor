@@ -1,0 +1,19 @@
+<template name="browser">
+  <div id="browser" class="ten columns">
+
+    <div id="cover_art_gallery">
+
+      {{#each albums}}
+        <div class="cover">
+          <a href="#">
+            <img src="{{this}}" width="250" height="250" />
+          </a>
+        </div>
+      {{/each}}
+
+    </div>
+
+    {{> songlist}}
+
+  </div>
+</template>

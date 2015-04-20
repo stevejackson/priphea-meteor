@@ -1,22 +1,26 @@
 <head>
-  <title>priphea</title>
+  <title>Priphea</title>
 
   <link href="/vendor/gumby.css" rel="stylesheet">
+  <link rel="stylesheet" href="/vendor/font-awesome.min.css">
+
+  <script type="text/javascript" src="/vendor/jquery-2.1.3.min.js"></script>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
 
-  <div id="hero">
-    {{> player}}
-  </div>
+  {{> header}}
+
+  {{> hangbar}}
 
   <main>
-    {{> hello}}
-  </main>
-</body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+    <div id="outer_container" class="row">
+      {{> sidebar}}
+
+      {{> browser}}
+    </div>
+
+  </main>
+
+</body>
