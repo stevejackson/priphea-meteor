@@ -1,6 +1,10 @@
 $(document).ready(function() {
   var recalculateSizes = function() {
-    aboveHeight = $('#hangbar').height();
+    var marginTop = parseInt($('#hangbar').css('marginTop'));
+    var marginBottom = parseInt($('#hangbar').css('marginBottom'));
+    var hangbarHeight = parseInt($('#hangbar').height());
+    var aboveHeight = hangbarHeight + marginTop + marginBottom;
+
     windowHeight = $(window).height() - aboveHeight;
 
     // sidebar
@@ -12,7 +16,7 @@ $(document).ready(function() {
     $('#cover_art_gallery').css('height', galleryHeight);
 
     // song list
-    songListHeight = windowHeight * (1.0 - coverArtPercent);
+    songListHeight = windowHeight * (1.00 - coverArtPercent);
     $('#song_list').css('height', songListHeight);
   }
 

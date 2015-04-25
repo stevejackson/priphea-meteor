@@ -1,7 +1,7 @@
 <template name="hangbar">
   <div id="hangbar" class="row">
 
-    <div id="song_controls" class="two columns">
+    <div id="song_controls" class="four columns">
       <div id="previous_song" class="control">
         <a href="#">
           <i class="fa fa-backward fa-2x"></i>
@@ -21,13 +21,13 @@
       </div>
     </div> <!-- song_controls -->
 
-    <div id="volume" class="two columns">
+    <div id="volume" class="four columns">
       <i class="fa fa-volume-down"></i>
       <input type="range" min="0" max="100" step="1">
       <i class="fa fa-volume-up"></i>
     </div> <!-- volume -->
 
-    <div id="now_playing" class="five columns">
+    <div id="now_playing" class="eight columns">
       <div id="song_art">
         <img src="/images/fakecovers/918.jpg" width="50" length="50" />
       </div>
@@ -53,9 +53,17 @@
       </div>
     </div> <!-- playback_mode -->
 
-    <div id="search" class="two columns">
+    <div id="search" class="four columns">
       <input type="text" placeholder="Search for music">
     </div> <!-- search -->
+
+    <div id="settings" class="one column">
+      <div class="medium default button">
+        <a href="/settings">
+          <i class="fa fa-cog fa-2x"></i>
+        </a>
+      </div>
+    </div> <!-- settings -->
 
   </div>
 </template>

@@ -1,1 +1,4 @@
 /public/images/fakecovers
+/client/stylesheets/sass_compiled
+.sass-cache/*
+.scssc

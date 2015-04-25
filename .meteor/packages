@@ -7,4 +7,10 @@
 meteor-platform
 autopublish
 insecure
-fourseven:scss
+sanjo:jasmine
+velocity:html-reporter
+iron:router
+meteorhacks:npm
+
+
+npm-container
